@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="PlaygroundServiceEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="PlaygroundWebService.war" deploy-path="/" handle="module:/resource/PlaygroundWebService/PlaygroundWebService">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PlaygroundEJB.jar" deploy-path="/" handle="module:/resource/PlaygroundEJB/PlaygroundEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PlaygroundEJBClient.jar" deploy-path="/" handle="module:/resource/PlaygroundEJBClient/PlaygroundEJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
