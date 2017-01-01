@@ -3,6 +3,7 @@
 	<name>PlaygroundEJB</name>
 	<comment></comment>
 	<projects>
+		<project>PlaygroundLib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
