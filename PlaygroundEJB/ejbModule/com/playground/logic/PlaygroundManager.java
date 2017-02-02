@@ -11,7 +11,7 @@ public class PlaygroundManager extends ConnectionInfo {
 		String hello = null;
 		try {
 			connect();			
-			hello = dao.getHello();
+			hello = dao.getHello(conn);
 		} catch(Exception e) {
 			
 		} finally {

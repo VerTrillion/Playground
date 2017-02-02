@@ -19,11 +19,12 @@ public class ConnectionInfo {
 	
 	public void connect() {
 		try {
-			Context initContext = new InitialContext();
-			Context context  = (Context)initContext.lookup("java:/");
-			DataSource ds = (DataSource)context.lookup("jdbc/test");
+			Context context = new InitialContext();
+			DataSource ds = (DataSource)context.lookup("java:/jdbc/test");
 			conn = ds.getConnection();
-		} catch(Exception e) {}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void flush() {

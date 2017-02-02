@@ -1,9 +1,12 @@
 package com.playground.dao;
 
+import java.sql.Connection;
+
 import com.playground.datasource.ConnectionInfo;
 
 public class PlaygroundDAO extends ConnectionInfo {
-	public String getHello() {
+	
+	public String getHello(Connection conn) {
 		String hello = "";
 		try {
 			if(conn != null) {

@@ -1,6 +1,5 @@
 package com.playground.ejb;
 
-import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,7 +12,6 @@ import org.jboss.resteasy.logging.impl.Log4jLogger;
 import com.playground.logic.PlaygroundManager;
 
 @Stateless
-@LocalBean
 @Path("/greeting")
 public class PlaygroundBean implements PlaygroundBeanLocal {
 	Logger logger = Log4jLogger.getLogger(PlaygroundBean.class);
