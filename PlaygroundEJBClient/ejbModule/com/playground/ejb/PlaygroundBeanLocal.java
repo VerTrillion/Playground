@@ -7,10 +7,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
 @Local
-@Path("/greeting")
 public interface PlaygroundBeanLocal {
 	
-	@GET
-	@Path("/{param}")
-	public Response helloWorld(@PathParam("param") String name);
+	public Response helloWorld(String name);
 }

@@ -6,6 +6,7 @@
 		<project>PlaygroundWebService</project>
 		<project>PlaygroundEJB</project>
 		<project>PlaygroundEJBClient</project>
+		<project>PlaygroundLib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

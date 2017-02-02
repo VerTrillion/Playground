@@ -12,5 +12,8 @@
         <dependent-module archiveName="PlaygroundEJBClient.jar" deploy-path="/" handle="module:/resource/PlaygroundEJBClient/PlaygroundEJBClient">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="PlaygroundLib.jar" deploy-path="/lib" handle="module:/resource/PlaygroundLib/PlaygroundLib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
